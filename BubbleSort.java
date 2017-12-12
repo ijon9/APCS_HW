@@ -51,7 +51,7 @@ public class BubbleSort {
     public static void bubbleSortV( ArrayList<Comparable> data )
     {
 	//Runs based on how many passes there have been, stopping once pass = n - 1
-	for(int pass = 1; pass < data.size()-1; pass++) {
+	for(int pass = 1; pass < data.size(); pass++) {
 	    for(int i = data.size()-1; i > 0; i--) { //Goes through the ArrayList, starting from the end
 		Comparable hold = data.get(i);
 		//Switches element at i with the previous one if i is less than that one
@@ -72,18 +72,7 @@ public class BubbleSort {
 	//Creates ArrayList data1 which will be sorted version of input
 	ArrayList<Comparable> data1 = new ArrayList<Comparable>();
 	copyTo(input, data1); //Copies input into data1
-
-	//Same algorithm as in bubbleSortV, makes sure to not actually change the inputted ArrayList
-	for(int pass = 1; pass < data1.size()-1; pass++) {
-	    for(int i = data1.size()-1; i > 0; i--) {
-		Comparable hold = data1.get(i);
-		if(hold.compareTo(data1.get(i-1)) < 0) {
-		    data1.set(i, data1.get(i-1));
-		    data1.set(i-1, hold);
-		}
-	    }
-	}
-	
+	bubbleSortV(data1);
 	return data1; //Returns sorted copy of input ArrayList
     }
 
