@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 public class SortTester {
     //=================== HELPER METHODS ===================
     //precond: lo < hi && size > 0
@@ -25,6 +27,88 @@ public class SortTester {
 	}
     }
     //======================================================
+
+    
+    public static void main(String[] args) {
+	System.out.println("================= BubbleSort: ===============");
+	ArrayList bestBubble = new ArrayList<Comparable>();
+	bestBubble.add(1);
+	bestBubble.add(2);
+	bestBubble.add(3);
+	bestBubble.add(4);
+	bestBubble.add(5);
+	System.out.println("Best Case: " + bestBubble);
+	MySorts.bubbleSortV(bestBubble);
+	System.out.println("Sorted version: " + bestBubble);
+
+	System.out.println("---------------------------");
+       
+	ArrayList worstBubble = new ArrayList<Comparable>();
+	worstBubble.add(5);
+	worstBubble.add(4);
+	worstBubble.add(3);
+	worstBubble.add(2);
+	worstBubble.add(1);
+	System.out.println("Worst Case: " + worstBubble);
+	MySorts.bubbleSortV(worstBubble);
+	System.out.println("Sorted version: " + worstBubble);
+
+	System.out.println("================= SelectionSort: ===============");
+	ArrayList bestSelection = new ArrayList<Comparable>();
+	bestSelection.add(1);
+	bestSelection.add(2);
+	bestSelection.add(3);
+	bestSelection.add(4);
+	bestSelection.add(5);
+	System.out.println("Best Case: " + bestSelection);
+	MySorts.bubbleSortV(bestSelection);
+	System.out.println("Sorted version: " + bestSelection);
+
+	System.out.println("---------------------------");
+       
+	ArrayList worstSelection = new ArrayList<Comparable>();
+	worstSelection.add(5);
+	worstSelection.add(1);
+	worstSelection.add(2);
+	worstSelection.add(3);
+	worstSelection.add(4);
+	System.out.println("Worst Case: " + worstSelection);
+	MySorts.bubbleSortV(worstSelection);
+	System.out.println("Sorted version: " + worstSelection);
+
+	System.out.println("================= InsertionSort: ===============");
+	ArrayList bestInsertion = new ArrayList<Comparable>();
+	bestInsertion.add(1);
+	bestInsertion.add(2);
+	bestInsertion.add(3);
+	bestInsertion.add(4);
+	bestInsertion.add(5);
+	System.out.println("Best Case: " + bestInsertion);
+	MySorts.bubbleSortV(bestInsertion);
+	System.out.println("Sorted version: " + bestInsertion);
+
+	System.out.println("---------------------------");
+       
+	ArrayList worstInsertion = new ArrayList<Comparable>();
+	worstInsertion.add(5);
+	worstInsertion.add(4);
+	worstInsertion.add(3);
+	worstInsertion.add(2);
+	worstInsertion.add(1);
+	System.out.println("Worst Case: " + worstInsertion);
+	MySorts.bubbleSortV(worstInsertion);
+	System.out.println("Sorted version: " + worstInsertion);
+
+	System.out.println("====================================");
+
+
+
+	
+
+
+	
+	
+    }
 
 
 
