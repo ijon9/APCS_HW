@@ -1,7 +1,13 @@
+//Xinyi Huang and Isaac Jon -- The Trainers
+//APCS1 pd8
+//HW54 -- One File to Bring Them All
+//2017-12-14
+
 import java.util.ArrayList;
 
 public class MySorts {
 
+    //BubbleSort 
     public static void bubbleSortV( ArrayList<Comparable> data ) {
 	//make n-1 passes across collection
 	for( int passCtr = 1; passCtr < data.size(); passCtr++ ) {
@@ -15,6 +21,7 @@ public class MySorts {
 	}
     }
 
+    //SelectionSort
     public static void selectionSortV( ArrayList<Comparable> data ) {
 	//note: this version places greatest value at rightmost end,
 
@@ -31,6 +38,7 @@ public class MySorts {
 	}
     }//end selectionSortV
 
+    //Insertion Sort
     public static void insertionSortV( ArrayList<Comparable> data ) {
 	//starts index of partition
 	for(int partition = 0; partition < data.size()-1; partition++) {
