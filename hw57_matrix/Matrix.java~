@@ -48,7 +48,12 @@ public class Matrix
   //return size of this matrix, where size is 1 dimension
   private int size() 
   {
-      return matrix.length;
+      int size = 0;
+      for(Object[] row: matrix) {
+	  for(Object o: row)
+	      size += 1;
+      }
+      return size;
   }
 
 
@@ -97,7 +102,6 @@ public class Matrix
   // and identical values in each slot
   public boolean equals( Matrix rightSide ) 
   {
-      
       if(size() == rightSide.size()) {
 	  for(int row = 0; row < matrix.length; row++) {
 	      for(int col = 0; col < matrix[row].length; col++) {
