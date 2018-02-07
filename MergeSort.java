@@ -28,30 +28,30 @@ public class MergeSort
    ******************************************************/
   private static int[] merge( int[] a, int[] b )
   {
-  	int aInd = 0;
-  	int bInd = 0;
-  	int[] result = new int[a.length + b.length];
-  	for(int i = 0; i < result.length; i++) {
-  		if(aInd < a.length && bInd < b.length) {
-  			if(a[aInd] < b[bInd]) {
-  				result[i] = a[aInd];
-  				aInd += 1;
-  			}
-  			else {
-  				result[i] = b[bInd];			
-  				bInd += 1;
-  			}
-  		}
-  		else if(aInd >= a.length && bInd < b.length) {
-  			result[i] = b[bInd];
-  			bInd += 1;
-  		}
-  		else if(bInd >= b.length && aInd < a.length) {
-  			result[i] = a[aInd];
-  			aInd += 1;
-  		}
-  	}
-  	return result;
+    int aInd = 0;
+    int bInd = 0;
+    int[] result = new int[a.length + b.length];
+    for(int i = 0; i < result.length; i++) {
+        if(aInd < a.length && bInd < b.length) {
+            if(a[aInd] < b[bInd]) {
+                result[i] = a[aInd];
+                aInd += 1;
+            }
+            else {
+                result[i] = b[bInd];            
+                bInd += 1;
+            }
+        }
+        else if(aInd >= a.length && bInd < b.length) {
+            result[i] = b[bInd];
+            bInd += 1;
+        }
+        else if(bInd >= b.length && aInd < a.length) {
+            result[i] = a[aInd];
+            aInd += 1;
+        }
+    }
+    return result;
   }//end merge()
 
 
@@ -62,24 +62,24 @@ public class MergeSort
    ******************************************************/
   public static int[] sort( int[] arr )
   {
-  	int lInd = 0;
-  	int mid = (arr.length / 2);
-  	int[] first = new int[mid];
-  	int[] last = new int[arr.length - mid];
-  	
-  	for(int i = 0; i < mid; i++) {
-  		first[i] = arr[i];
-  	}
-  	for(int i = mid; i < arr.length; i++ ) {
-  		last[lInd] = arr[i]; 
-  		lInd += 1;
-  	}
+    int lInd = 0;
+    int mid = (arr.length / 2);
+    int[] first = new int[mid];
+    int[] last = new int[arr.length - mid];
+    
+    for(int i = 0; i < mid; i++) {
+        first[i] = arr[i];
+    }
+    for(int i = mid; i < arr.length; i++ ) {
+        last[lInd] = arr[i]; 
+        lInd += 1;
+    }
 
-  	if(arr.length > 1) {
-  		return merge(sort(first), sort(last));	
-  	}
+    if(arr.length > 1) {
+        return merge(sort(first), sort(last));  
+    }
 
-  	return arr;
+    return arr;
   }//end sort()
 
 
