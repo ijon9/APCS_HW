@@ -1,7 +1,21 @@
+<<<<<<< HEAD
+=======
+//Xinyi Huang and Isaac Jon -- The Trainers
+//APCS1 pd8
+//HW55 -- Never Fear, Big Oh is Here!
+//2017-12-15
+
+>>>>>>> be2f54aadab08276401fd699f8cd9d33f4a2c284
 import java.util.ArrayList;
 
 public class MySorts {
 
+<<<<<<< HEAD
+=======
+    //BubbleSort
+    //Best case: O(1), bubbleSort only runs once, no matter how big n is.
+    //Worst case: O(n^2), bubbleSort runs n^2 times, as it has 2 for loops
+>>>>>>> be2f54aadab08276401fd699f8cd9d33f4a2c284
     public static void bubbleSortV( ArrayList<Comparable> data ) {
 	//make n-1 passes across collection
 	for( int passCtr = 1; passCtr < data.size(); passCtr++ ) {
@@ -15,6 +29,12 @@ public class MySorts {
 	}
     }
 
+<<<<<<< HEAD
+=======
+    //SelectionSort
+    //Best case: O(1), SelectionSort only runs once, no matter how big n is.
+    //Worst case: O(n^2), Selection sort runs n^2 times, runs the inner for loop for each pass. 
+>>>>>>> be2f54aadab08276401fd699f8cd9d33f4a2c284
     public static void selectionSortV( ArrayList<Comparable> data ) {
 	//note: this version places greatest value at rightmost end,
 
@@ -31,6 +51,12 @@ public class MySorts {
 	}
     }//end selectionSortV
 
+<<<<<<< HEAD
+=======
+    //Insertion Sort
+    //Best case: O(1), InsretionSort runs only once if its already sorted.
+    //Worst Case: O(nlog2n), Insertion sort doesn't loop through the the whole ArrayList for each pass, but only moves the walkElement to the correct spot. 
+>>>>>>> be2f54aadab08276401fd699f8cd9d33f4a2c284
     public static void insertionSortV( ArrayList<Comparable> data ) {
 	//starts index of partition
 	for(int partition = 0; partition < data.size()-1; partition++) {
