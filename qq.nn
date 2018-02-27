@@ -1,0 +1,34 @@
+==========================
+Isaac Jon
+APCS2 pd2
+HW 09 -- Yaaasss Queens
+2018-02-27
+==========================
+
+(2x2) 
+
+For a 2x2 board, there are no solutions, as placing a queen on any of the 4 tiles restricts the rest of the remaining tiles
+
+(3x3)
+
+For a 3x3 board, there are 2 solutions, as by placing a queen in the corner of the board you can place another queen at an L shape from the first queen, which restricts all the remaining tiles.
+
+(4x4)
+
+For a 4x4 board, there are 4 solutions, because you can place queens one space to the side of the corner tile, and spiral around the board in L shapes. 
+
+(5x5)
+
+For a 5x5 board, there are 5 solutions. By starting in the corner, you can place queens in a chain of L shapes, resulting in 5 placements. 
+
+(6x6)
+
+For a 6x6 board, there are 5 solutions. First place the queen in the bottom left corner, and create a spiral of Queens separated by L shapes
+
+ (7x7)
+
+ For a 7x7 board, there are 6 placements. Same concept, start in the corner and spiral around board, resulting in only 6 spots. 
+
+ (8x8)
+
+ For an 8x8 board, there are 7 placements. Start in the corner with a queen, and branch out to another Queen. The second queen can then branch two queens out, towards the top of the board and another towards the right side. Continue to branch the queens, resulting in  
